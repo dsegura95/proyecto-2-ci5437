@@ -1,5 +1,5 @@
 GXX = g++
-OPT = -O3 -Wall -std=c++11 -g
+OPT = -O3 -Wall -std=c++11
 
 all:	src/main.cpp src/othello.hpp src/algorithms.hpp
 	make clean

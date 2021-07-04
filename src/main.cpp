@@ -63,7 +63,7 @@ int main(int argc, const char **argv) {
       verbose = 2;
     }
   }
-  else if (argc == 1) {
+  if (argc < verb_flag + 2) {
     // Imprimiendo la sintaxis.
     cout << "\033[1;31mSyntax error\033[0m. Remember that the script sinopsis is:\n\n"
       << "    \033[1mothello.out\033[0m [ \033[4mVERBOSE\033[0m ] \033[4mALGORITHM\033[0m [ \033[4mSECONDS\033[0m [ \033[4mTT\033[0m ] ]\n\n"
