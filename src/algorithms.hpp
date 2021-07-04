@@ -59,7 +59,7 @@ bool TEST(othello_t state, unsigned depth, int score, std::function<bool (int, i
             if (color && TEST(state.move(color, childs[i]), depth-1, score, std::greater<int>(), !color)){
                 return true;
             }
-            else if(!color && !TEST(state.move(color, childs[i]), depth-1, score, std::greater<int>(), !color)){
+            else if(!color && !TEST(state.move(color, childs[i]), depth-1, score, std::greater_equal<int>(), !color)){
                 return false;
             }
         }
